@@ -9,7 +9,7 @@ import Chat from './Chat/Chat';
 
 
 const massenger = () => {
-  const [Text, setText] = useState()
+  const [Text, setText] = useState("")
 
   return (
     <>
@@ -21,7 +21,7 @@ const massenger = () => {
   
 </div>
 <div className=' overflow-hidden bg-green-500 mt-[1vw]' >
-<DataMenu Text= {Text}/>
+<DataMenu Text={Text}/>
 
 </div>
 

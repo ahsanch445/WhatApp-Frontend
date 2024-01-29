@@ -10,11 +10,11 @@ const [user, setuser] = useState([])
     async function Getdata(){
 let response= await axios.get("http://localhost:3000/getuser")
 const filteredUsers = response.data.filter(user => 
-  typeof Text === 'string' && typeof user.name === 'string' && user.name.toLowerCase().includes(Text.toLowerCase())
+ user.name.toLowerCase().includes(Text.toLowerCase())
 );
 
-
 setuser(filteredUsers)
+
 
     }
     useEffect(() => {
