@@ -6,6 +6,6 @@ export const getuser = async  (dataId) => {
     return res.data
 }
 export const getuserConverstion = async  (data) => {
-    const response = await axios.post("https://whatsapp-api-khaki.vercel.app/giConverstion/Massage", data);
+    const response = await axios.post("https://whatsapp-api-khaki.vercel.app/Converstion/Massage", data);
     return response.data
 }
