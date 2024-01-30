@@ -6,6 +6,6 @@ export const getuser = async  (dataId) => {
     return res.data
 }
 export const getuserConverstion = async  (data) => {
-    const response = await axios.post("https://what-app-steel.vercel.app/Converstion/Massage", data);
+    const response = await axios.post("https://what-app-steel.vercel.app/giConverstion/Massage", data);
     return response.data
 }
