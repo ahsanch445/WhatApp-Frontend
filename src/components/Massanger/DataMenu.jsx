@@ -8,7 +8,7 @@ export const DataMenu = ({Text}) => {
   const {creden,socket, setactiveUser} = useContext(AuthContext) 
 const [user, setuser] = useState([])
     async function Getdata(){
-let response= await axios.get("https://what-app-steel.vercel.app/getuser")
+let response= await axios.get("https://whatsapp-api-aroq.vercel.app/getuser")
 const filteredUsers = response.data.filter(user => 
  user.name.toLowerCase().includes(Text.toLowerCase())
 );

@@ -14,7 +14,7 @@ setcreden(decoded)
 
 
 
-const response = axios.post("https://what-app-steel.vercel.app/getUserData",decoded)
+const response = axios.post("https://whatsapp-api-aroq.vercel.app/getUserData",decoded)
 
  }
  let onFailure = ()=>{
