@@ -26,7 +26,7 @@ const UserData= async()=>{
 
   setUser(user)
  var CoverstionData = {sender:user.name,recive:creden.name}
- var res = await axios.post("http://localhost:3000/addConverstion",CoverstionData)
+ var res = await axios.post("https://whatsapp-api-aroq.vercel.app/addConverstion",CoverstionData)
 
 }
 
