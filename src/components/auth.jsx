@@ -14,7 +14,7 @@ setcreden(decoded)
 
 
 
-const response = axios.post("https://whatsapp-api-aroq.vercel.app/getUserData",decoded)
+const response = axios.post("http://localhost:3000/getUserData",decoded)
 
  }
  let onFailure = ()=>{
@@ -22,7 +22,7 @@ const response = axios.post("https://whatsapp-api-aroq.vercel.app/getUserData",d
  }
 
   return (
-    <GoogleOAuthProvider clientId="939751230320-uve4o06v0ocopjrl6speet7h2c00vq74.apps.googleusercontent.com"> 
+    <GoogleOAuthProvider clientId="939751230320-umv12reg8ovqm1vd7tti2sa5dr1oere4.apps.googleusercontent.com"> 
           <GoogleLogin
   onSuccess={onLogin}
   onError={onFailure}

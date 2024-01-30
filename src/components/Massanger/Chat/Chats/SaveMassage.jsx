@@ -3,7 +3,7 @@ import React from 'react'
 
 export const SaveMassage = async (data) => {
     
-   let res =  await axios.post("https://whatsapp-api-aroq.vercel.app/Save/Massage",data)
+   let res =  await axios.post("http://localhost:3000/Save/Massage",data)
   
   
   return (

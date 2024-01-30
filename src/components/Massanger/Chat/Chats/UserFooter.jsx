@@ -34,7 +34,7 @@ useEffect(() => {
   
        
   
-      let  response =  await axios.post("https://whatsapp-api-aroq.vercel.app/Upload/Files", data);
+      let  response =  await axios.post("http://localhost:3000/Upload/Files", data);
               setUrl(response.data.imgUrl) 
       } catch (error) {
         // Handle error
