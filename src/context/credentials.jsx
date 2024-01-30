@@ -10,7 +10,7 @@ const CredentialsProvider = ({ children }) => {
   const [toggle, settoggle] = useState(false)
   const socket =  useRef()
   useEffect(() => {
-    socket.current = io("https://fluttering-spicy-acapella.glitch.me/");
+    socket.current = io("");
   
     // Error handling
     socket.current.on('connect_error', (error) => {
