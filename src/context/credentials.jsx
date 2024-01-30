@@ -10,7 +10,7 @@ const CredentialsProvider = ({ children }) => {
   const [toggle, settoggle] = useState(false)
   const socket =  useRef()
   useEffect(() => {
-    socket.current = io("ws://localhost:9000");
+    socket.current = io("https://whatsapp-socket-io.vercel.app/");
   
     // Error handling
     socket.current.on('connect_error', (error) => {
