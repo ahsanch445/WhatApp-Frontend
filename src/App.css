@@ -27,3 +27,11 @@
 #box{
   text-shadow: 10px 12px 14px rgba(0, 0, 0, 1)
 }
+
+@media only screen and (max-width: 600px) {
+  .my-element {
+    margin-top: 1px;
+    font-size: 1.5vw
+  }
+
+}

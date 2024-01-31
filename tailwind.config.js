@@ -7,6 +7,11 @@ export default {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      margin: ['responsive', 'hover', 'focus'],
+      // Add other variants if needed
+    },
+  },
   plugins: [],
 }
-
