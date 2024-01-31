@@ -22,7 +22,7 @@ const [Url, setUrl] = useState()
 
 
 
-console.log(UserText)
+
  useEffect(() => {
   const fetchMessages = async () => {
    
@@ -50,7 +50,7 @@ useEffect(() => {
 
 useEffect(() => {
 socket.current.on("getMassage",data=>{
-  console.log("Received message:", data);
+
 
   setliveMassage({
     
@@ -130,7 +130,7 @@ else{
   }
 }
 socket.current.emit("sendUser",massage)
-console.log("Message sent:", massage);
+
 await SaveMassage(massage)
 settoggle(data =>!data)
 setText("")
