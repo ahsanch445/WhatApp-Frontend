@@ -5,7 +5,6 @@ import UserMassage from "./UserMassage"
 import { AuthContext } from '../../../../context/credentials'
 import { useContext } from 'react'
 import { SaveMassage } from './SaveMassage'
-import axios from 'axios'
 import { getuser } from '../../../Api-data/getuser'
 import HomeCard from "./HomeCard"
 const UserChat =  ({Massage}) => {
