@@ -61,13 +61,13 @@ useEffect(() => {
   <div></div>
   <img className='rounded-full object-cover h-[5vw] w-[5vw]  ' src={user.picture} alt="" />
   <div>
-    <h5 style={{lineHeight:"1"}} className='mt-[1.2vw] fw-normal'>{user.name} </h5>
+    <h5 style={{lineHeight:"1"}} className='text-[2.3vw] mt-[1.2vw] fw-normal'>{user.name} </h5>
   <p className='m-[1vw] flex items-center gap-[0.5vw]' style={{lineHeight:"1",fontSize:"1.3vw"}}>  
-  {Display?.updateText?.includes("localhost")? "media":Display.updateText}</p>
+  {Display?.updateText?.includes("whatsapp-api-khaki.vercel.app")? "media":Display.updateText}</p>
   </div>
 </div> 
 <div>
-  <p className=' opacity-80 text-xs font-semibold'>{Display?.timestamps&&<div>{timestamp}</div>}</p>
+  <p className='  opacity-80 text-xs font-semibold'>{Display?.timestamps&&<div className=' text-[1.2vw] '>{timestamp}</div>}</p>
   </div>
     </div>
     

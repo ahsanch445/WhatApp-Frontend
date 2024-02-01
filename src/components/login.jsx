@@ -28,7 +28,7 @@ const Login = ()=> {
 </div>
 <div id="QR-Code" className=' px-2 relative flex justify-center  h-full w-[35%'>
 <img  className='mt-[12vw]   h-[25vw] w-[27vw]' src="https://cdn-icons-png.flaticon.com/512/241/241528.png" alt="" srcset="" />
-<div className='w-[20vw] absolute top-[23vw] z-10 bg-white'><Auth/></div>
+<div className='w-[20vw] absolute overflow-hidden top-[23vw] z-10 bg-white'><Auth/></div>
 </div>
  </div>
     </div>

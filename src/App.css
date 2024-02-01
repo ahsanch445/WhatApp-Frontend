@@ -35,3 +35,21 @@
   }
 
 }
+
+@media only screen and (max-width: 600px) {
+  #iconCgap{
+    gap: 5vw;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  #Sid{
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+  }
+  #id{
+    position: absolute;
+    left: 1vw;
+  }
+}

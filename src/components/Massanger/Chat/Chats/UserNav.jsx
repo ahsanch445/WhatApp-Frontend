@@ -24,12 +24,12 @@ const UserNav = () => {
      </div>
     
      <div className='flex items-center justify-center gap-[3vw]'>
-        <VideocamIcon/>
-<Search/>
+        <VideocamIcon style={{fontSize:"2.4vw"}}/>
+<Search style={{fontSize:"2.4vw"}} />
 <div >
 <div className=" dropdown-menu-lg-start">
   <div className=" " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-  <div className=''><MoreVertIcon/></div>
+  <div className=''><MoreVertIcon style={{fontSize:"2.4vw"}}/></div>
     
   </div>
 

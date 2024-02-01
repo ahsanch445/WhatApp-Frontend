@@ -1,8 +1,15 @@
 import React from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ChatIcon from '@mui/icons-material/Chat';
+import { styled } from '@mui/system';
 import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 const Menu = () => {
+  const CustomChatIcon = styled(ChatIcon)({
+    color: '#96948d',
+    fontSize: '12vw',
+  });
+  
+  
   return (
     <>
       <nav  className='  px-2 flex gap-[13vw] items-center w-full h-16 bg-[#F0F2F5]'>
@@ -10,7 +17,7 @@ const Menu = () => {
   <img className='h-10 w-10 rounded-full' src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
 <div className='flex items-center gap-[4vw]'>
 
-  <ChatIcon/>
+  <CustomChatIcon1/>
 
 
 <HistoryToggleOffIcon/>
