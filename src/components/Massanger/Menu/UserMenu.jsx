@@ -14,9 +14,9 @@ useEffect(() => {
   const  fetch = async ()=>{
     var data = await getuserConverstion({sender:creden.name,reciver:user.name})
     var data = data.data
-    console.log(data)
+   
  setDisplay({updateText:data?.massage,  timestamps:data?.updatedAt})
-  console.log(Display)
+
   }
   
   fetch()

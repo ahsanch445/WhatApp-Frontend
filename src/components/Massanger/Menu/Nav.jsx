@@ -21,7 +21,7 @@ const openDrawer=()=>{
   return (
     <>
   
-      <nav id='iconPgap'   className=' px-2 flex gap-[14vw] items-center w-full h-16 bg-[#F0F2F5] '>
+      <nav id='iconPgap'   className=' px-2 flex gap-[14vw] items-center w-full  bg-[#F0F2F5] '>
 
   <img  onClick={openDrawer} className=' cursor-pointer h-[4vw] w-[4vw] rounded-full' src={creden.picture} alt="dp" />
 <div id='iconCgap' className='flex items-center gap-[4vw]'>

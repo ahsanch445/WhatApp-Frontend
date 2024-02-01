@@ -4,7 +4,7 @@ import axios from 'axios'
 import { AuthContext } from '../../context/credentials'
 
 export const DataMenu = ({Text}) => {
-  console.log(Text) 
+ 
   const {creden,socket, setactiveUser} = useContext(AuthContext) 
 const [user, setuser] = useState([])
     async function Getdata(){

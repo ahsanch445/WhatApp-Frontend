@@ -156,7 +156,7 @@ setfile("")
    
    <UserNav/>
   
-   <div style={{flex:"1",overflowY:"auto"}} className='  pb-[6vw]'  ref={messagesRef} >
+   <div style={{flex:"1",overflowY:"auto"}} className=' bg-[#F4F1EB]  pb-[6vw]'  ref={messagesRef} >
 
 
  {
