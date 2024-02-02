@@ -66,16 +66,16 @@ useEffect(() => {
             <div className='flex  gap-[1.5vw]  '>
  <MoodIcon2/>
  <label htmlFor='data'  className=' cursor-pointer d-flex '>
-  <input onChange={(data)=>Files(data)} id='data'  className='d-none' type="file" />
+  <input value={{Text}} onChange={(data)=>Files(data)} id='data'  className='d-none' type="file" />
   <AddIcon2  />
   </label>
 
 </div>
 <div className='flex items-center gap-[2vw] w-[85%] '>
 <input   value={Text}           onKeyDown={(e) => {
-            if (e.key === 'Enter') {
+         
               sendValue(e);
-            }
+        
           }}
  onChange={(e)=>{setText(e.target.value)}}
 
