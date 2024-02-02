@@ -93,9 +93,30 @@ const scrollToBottom = () => {
     messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
   }
 };
+var massage ={}
 
+const sendFile = async()=>{
+  if(file){
+    
+    massage = {
+      sender:creden.name,
+      reciver:User.name,
+      Converstion:dataId ,
+    type:"file",
+    text:Url,
+    
+    
+    }
+  }
+  socket.current.emit("sendUser",massage)
 
+await SaveMassage(massage)
+settoggle(data =>!data)
+setText("")
+setUrl("")
+setfile("")
 
+}
 
  
   const sendValue = async (event) => {
@@ -103,7 +124,7 @@ const scrollToBottom = () => {
     if(event.key === 'Enter'|| event.type === 'click'){
       event.preventDefault();
      
-      var massage ={}
+     
       if(!file){
        massage = {
           sender:creden.name,
@@ -116,18 +137,7 @@ const scrollToBottom = () => {
         }
       }
 
-else{
-  setevent(event)
-  massage = {
-    sender:creden.name,
-    reciver:User.name,
-    Converstion:dataId ,
-  type:"file",
-  text:Url,
-  
-  
-  }
-}
+
 socket.current.emit("sendUser",massage)
 
 await SaveMassage(massage)
@@ -167,7 +177,7 @@ setfile("")
 
 </div>
 
-   <UserFooter event={event} setUrl={setUrl} file={file} setfile={setfile} sendValue={sendValue}  setText={setText} Text={Text} />
+   <UserFooter sendFile={sendFile} event={event} setUrl={setUrl} file={file} setfile={setfile} sendValue={sendValue}  setText={setText} Text={Text} />
    </div>
    :<HomeCard/>
 

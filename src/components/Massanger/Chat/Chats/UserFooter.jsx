@@ -3,7 +3,7 @@ import MoodIcon from '@mui/icons-material/Mood';
 import AddIcon from '@mui/icons-material/Add';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import styled from '@emotion/styled';
-
+import SendIcon from '@mui/icons-material/Send';
 
 
 
@@ -12,7 +12,7 @@ import axios from 'axios';
 
 function UserFooter(data) {
 
-  const {sendValue,setText,Text,file,setfile,setUrl,event} = data
+  const {sendValue,setText,Text,file,setfile,setUrl,sendFile} = data
 console.log(Text)
 const Files=(data)=>{
   data.preventDefault(); 
@@ -72,19 +72,32 @@ useEffect(() => {
 
 </div>
 <div className='flex items-center gap-[2vw] w-[85%] '>
-<input   value={Text}           onKeyDown={(e) => {
-         
-              sendValue(e);
-        
-          }}
- onChange={(e)=>{setText(e.target.value)}}
+  {
+    file? <input   value={Text}          
+  
+onChange={(e)=>{setText(e.target.value)}}
 
 
 
 className='outline-none w-full bg-[#FFFFFF] p-[0.6vw] rounded ' placeholder='Type a massage' p type="text" />
+
+:<input   value={Text}           onKeyDown={(e) => {
+         
+      sendValue(e);
+
+  }}
+onChange={(e)=>{setText(e.target.value)}}
+
+
+
+className='outline-none w-full bg-[#FFFFFF] p-[0.6vw] rounded ' placeholder='Type a massage' p type="text" />
+  }
+
 <div>
-  
-<KeyboardVoiceIcon2/>
+  {
+    file? <div style={{borderRadius:"50%"}} className=' cursor-pointer p-[1.5vw] bg-[#00a884]'> <SendIcon className='text-[#ffffff]' onClick={sendFile}/></div>:<KeyboardVoiceIcon2/>
+  }
+
 </div>
 
  </div>
