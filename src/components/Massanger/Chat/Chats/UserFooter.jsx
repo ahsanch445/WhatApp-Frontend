@@ -13,7 +13,7 @@ import axios from 'axios';
 function UserFooter(data) {
 
   const {sendValue,setText,Text,file,setfile,setUrl,event} = data
-
+console.log(Text)
 const Files=(data)=>{
   data.preventDefault(); 
   setfile(data.target.files[0])
@@ -66,7 +66,7 @@ useEffect(() => {
             <div className='flex  gap-[1.5vw]  '>
  <MoodIcon2/>
  <label htmlFor='data'  className=' cursor-pointer d-flex '>
-  <input value={{Text}} onChange={(data)=>Files(data)} id='data'  className='d-none' type="file" />
+  <input  onChange={(data)=>Files(data)} id='data'  className='d-none' type="file" />
   <AddIcon2  />
   </label>
 
@@ -82,7 +82,11 @@ useEffect(() => {
 
 
 className='outline-none w-full bg-[#FFFFFF] p-[0.6vw] rounded ' placeholder='Type a massage' p type="text" />
+<div>
+  
 <KeyboardVoiceIcon2/>
+</div>
+
  </div>
     </div>
   )
